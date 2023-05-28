@@ -1,0 +1,16 @@
+{
+  "spec": {
+    "elasticUnit": [
+      {
+        "name": "virtual-kubelet",
+        "labels": {
+          "alibabacloud.com/eci": "true"
+        },
+        "annotations": {
+          "k8s.aliyun.com/eci-spot-strategy": "SpotWithPriceLimit",
+          "k8s.aliyun.com/eci-spot-price-limit": "0.001"
+        }
+      }
+    ]
+  }
+}

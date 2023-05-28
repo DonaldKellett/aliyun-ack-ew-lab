@@ -1,0 +1,21 @@
+apiVersion: autoscaling.alibabacloud.com/v1beta1
+kind: ElasticWorkload
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+  namespace: default
+spec:
+  sourceTarget:
+    name: nginx
+    kind: Deployment
+    apiVersion: apps/v1
+    min: 0
+    max: 2
+  replicas: 10
+  elasticUnit:
+  - name: virtual-kubelet
+    labels:
+      alibabacloud.com/eci: "true"
+    annotations:
+      k8s.aliyun.com/eci-spot-strategy: SpotAsPriceGo
