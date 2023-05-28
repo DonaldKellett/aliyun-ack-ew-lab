@@ -2,6 +2,8 @@
 
 Alibaba Cloud ACK lab on virtual node + ElasticWorkload + spot pricing
 
+A detailed walkthrough of this lab is now available in Chinese on CSDN: https://blog.csdn.net/donaldsebleung/article/details/130913403
+
 ## Lab setup
 
 Create an [Alibaba Cloud ACK](https://www.alibabacloud.com/product/kubernetes) cluster with the following specifications:
